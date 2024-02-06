@@ -1,0 +1,748 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Stock_Dataset' inline='true' name='federated.1l733ki0c3dn4918d9qfg18rgeah' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Stock_Dataset' name='textscan.0up9y491fhur2p16reiha0krk3ri'>
+            <connection class='textscan' directory='C:/Users/essch/OneDrive/Documents/College Documents/Spring 2024/DS 450/Capstone Project' filename='Stock_Dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0up9y491fhur2p16reiha0krk3ri' name='Stock_Dataset.csv' table='[Stock_Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Stock_Title' ordinal='0' />
+            <column datatype='real' name='Return_On_Equity' ordinal='1' />
+            <column datatype='real' name='Current_Ratio' ordinal='2' />
+            <column datatype='real' name='Asster_Turnover' ordinal='3' />
+            <column datatype='real' name='WACC' ordinal='4' />
+            <column datatype='real' name='Dividend_Yield' ordinal='5' />
+            <column datatype='real' name='Earnings_Yield' ordinal='6' />
+            <column datatype='real' name='Revenue_Change' ordinal='7' />
+            <column datatype='real' name='Net_Income_Change' ordinal='8' />
+            <column datatype='real' name='Price_Change' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0up9y491fhur2p16reiha0krk3ri' name='Stock_Dataset.csv' table='[Stock_Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Stock_Title' ordinal='0' />
+            <column datatype='real' name='Return_On_Equity' ordinal='1' />
+            <column datatype='real' name='Current_Ratio' ordinal='2' />
+            <column datatype='real' name='Asster_Turnover' ordinal='3' />
+            <column datatype='real' name='WACC' ordinal='4' />
+            <column datatype='real' name='Dividend_Yield' ordinal='5' />
+            <column datatype='real' name='Earnings_Yield' ordinal='6' />
+            <column datatype='real' name='Revenue_Change' ordinal='7' />
+            <column datatype='real' name='Net_Income_Change' ordinal='8' />
+            <column datatype='real' name='Price_Change' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock_Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stock_Title]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>Stock_Title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Return_On_Equity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Return_On_Equity]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>Return_On_Equity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Current_Ratio]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>Current_Ratio</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asster_Turnover</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Asster_Turnover]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>Asster_Turnover</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WACC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WACC]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>WACC</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dividend_Yield</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dividend_Yield]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>Dividend_Yield</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Earnings_Yield</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Earnings_Yield]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>Earnings_Yield</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue_Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue_Change]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>Revenue_Change</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net_Income_Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net_Income_Change]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>Net_Income_Change</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price_Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price_Change]</local-name>
+            <parent-name>[Stock_Dataset.csv]</parent-name>
+            <remote-alias>Price_Change</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Asster Turnover' datatype='real' name='[Asster_Turnover]' role='measure' type='quantitative' />
+      <column caption='Current Ratio' datatype='real' name='[Current_Ratio]' role='measure' type='quantitative' />
+      <column caption='Dividend Yield' datatype='real' name='[Dividend_Yield]' role='measure' type='quantitative' />
+      <column caption='Earnings Yield' datatype='real' name='[Earnings_Yield]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Net Income Change (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[Net_Income_Change]' peg='0' size='40' />
+      </column>
+      <column caption='Net Income Change' datatype='real' name='[Net_Income_Change]' role='measure' type='quantitative' />
+      <column caption='Price Change' datatype='real' name='[Price_Change]' role='measure' type='quantitative' />
+      <column caption='Return On Equity' datatype='real' name='[Return_On_Equity]' role='measure' type='quantitative' />
+      <column caption='Revenue Change' datatype='real' name='[Revenue_Change]' role='measure' type='quantitative' />
+      <column caption='Stock Title' datatype='string' name='[Stock_Title]' role='dimension' type='nominal' />
+      <column caption='Wacc' datatype='real' name='[WACC]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Stock_Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Stock_Dataset.csv' id='Stock_Dataset.csv_892F13AC9B0D4C8DB8E559A932ABC082'>
+            <properties context=''>
+              <relation connection='textscan.0up9y491fhur2p16reiha0krk3ri' name='Stock_Dataset.csv' table='[Stock_Dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Stock_Title' ordinal='0' />
+                  <column datatype='real' name='Return_On_Equity' ordinal='1' />
+                  <column datatype='real' name='Current_Ratio' ordinal='2' />
+                  <column datatype='real' name='Asster_Turnover' ordinal='3' />
+                  <column datatype='real' name='WACC' ordinal='4' />
+                  <column datatype='real' name='Dividend_Yield' ordinal='5' />
+                  <column datatype='real' name='Earnings_Yield' ordinal='6' />
+                  <column datatype='real' name='Revenue_Change' ordinal='7' />
+                  <column datatype='real' name='Net_Income_Change' ordinal='8' />
+                  <column datatype='real' name='Price_Change' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Individual variable distributions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Stock_Dataset' name='federated.1l733ki0c3dn4918d9qfg18rgeah' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l733ki0c3dn4918d9qfg18rgeah'>
+            <column caption='Asster Turnover' datatype='real' name='[Asster_Turnover]' role='measure' type='quantitative' />
+            <column caption='Current Ratio' datatype='real' name='[Current_Ratio]' role='measure' type='quantitative' />
+            <column caption='Dividend Yield' datatype='real' name='[Dividend_Yield]' role='measure' type='quantitative' />
+            <column caption='Earnings Yield' datatype='real' name='[Earnings_Yield]' role='measure' type='quantitative' />
+            <column caption='Return On Equity' datatype='real' name='[Return_On_Equity]' role='measure' type='quantitative' />
+            <column caption='Stock Title' datatype='string' name='[Stock_Title]' role='dimension' type='nominal' />
+            <column caption='Wacc' datatype='real' name='[WACC]' role='measure' type='quantitative' />
+            <column-instance column='[WACC]' derivation='Attribute' name='[attr:WACC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Stock_Title]' derivation='None' name='[none:Stock_Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Asster_Turnover]' derivation='Sum' name='[sum:Asster_Turnover:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Current_Ratio]' derivation='Sum' name='[sum:Current_Ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dividend_Yield]' derivation='Sum' name='[sum:Dividend_Yield:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Earnings_Yield]' derivation='Sum' name='[sum:Earnings_Yield:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Return_On_Equity]' derivation='Sum' name='[sum:Return_On_Equity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[WACC]' derivation='Sum' name='[sum:WACC:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[attr:WACC:qk]' included-values='in-range'>
+            <min>-3.551111642</min>
+            <max>831148.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1l733ki0c3dn4918d9qfg18rgeah].[attr:WACC:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Stock_Title:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Current_Ratio:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Current_Ratio:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Dividend_Yield:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline3' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Dividend_Yield:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Current_Ratio:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Stock_Title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Dividend_Yield:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Stock_Title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Asster_Turnover:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Stock_Title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Return_On_Equity:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Stock_Title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Earnings_Yield:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Stock_Title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:WACC:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Stock_Title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Current_Ratio:qk] + ([federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Dividend_Yield:qk] + ([federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Asster_Turnover:qk] + ([federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Return_On_Equity:qk] + ([federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Earnings_Yield:qk] + [federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:WACC:qk])))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{F138588F-7902-4204-B100-004C27AD00BB}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Revenue vs Net Income Changes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Stock_Dataset' name='federated.1l733ki0c3dn4918d9qfg18rgeah' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l733ki0c3dn4918d9qfg18rgeah'>
+            <column caption='Net Income Change' datatype='real' name='[Net_Income_Change]' role='measure' type='quantitative' />
+            <column caption='Revenue Change' datatype='real' name='[Revenue_Change]' role='measure' type='quantitative' />
+            <column-instance column='[Net_Income_Change]' derivation='Attribute' name='[attr:Net_Income_Change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Revenue_Change]' derivation='Attribute' name='[attr:Revenue_Change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Net_Income_Change]' derivation='None' name='[none:Net_Income_Change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Revenue_Change]' derivation='None' name='[none:Revenue_Change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[attr:Net_Income_Change:qk]' included-values='in-range'>
+            <min>-200.0</min>
+            <max>200.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1l733ki0c3dn4918d9qfg18rgeah].[attr:Revenue_Change:qk]' included-values='in-range'>
+            <min>-300.0</min>
+            <max>300.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1l733ki0c3dn4918d9qfg18rgeah].[attr:Net_Income_Change:qk]</column>
+            <column>[federated.1l733ki0c3dn4918d9qfg18rgeah].[attr:Revenue_Change:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Revenue_Change:qk]</rows>
+        <cols>[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Net_Income_Change:qk]</cols>
+      </table>
+      <simple-id uuid='{5A242023-0ED2-4410-AC1B-9BF4773B5317}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B6E0B879-14B6-4B08-8E08-C68200B2D22E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Net_Income_Change:qk]</field>
+            <field>[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Stock_Title:nk]</field>
+            <field>[federated.1l733ki0c3dn4918d9qfg18rgeah].[sum:Net_Income_Change:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EDCA688E-F002-4122-B452-B01EF82B141C}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Net_Income_Change:qk]</field>
+            <field>[federated.1l733ki0c3dn4918d9qfg18rgeah].[none:Revenue_Change:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AC16AD40-A2BE-4C2D-B47D-C52A313130CD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A9DAC289-4BC8-44F6-9714-18D6673BBCD3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='145'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
