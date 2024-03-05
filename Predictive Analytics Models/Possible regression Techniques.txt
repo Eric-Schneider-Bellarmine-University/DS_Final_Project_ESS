@@ -1,0 +1,7 @@
+Gaussian process regression
+Isotonic regression
+Bayesian Ridge Regression
+Bagging Meta estimator
+Voting Regression
+XG boosting
+Tweedie Regression
