@@ -1,4 +1,6 @@
 # DS_Final_Project_ESS
+The project held in this repository is based around a predictive analitics model meant to use ratio analysis to predict future stock price changes in a portfolio.
+
 
 # 1/16/2024
 Updated Repository with Project Proposal.
