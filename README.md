@@ -13,3 +13,7 @@ Dataset building program was also updated to remove outliers in the output of th
 
 # 3/12/2024
 Updated repository with project poster draft.
+
+# 4/23/2024
+Updated repository with updated models utilizing KNN imputation.
+Updated repository with final model and a practical presentation of the model's ability to predict portfolio returns.
